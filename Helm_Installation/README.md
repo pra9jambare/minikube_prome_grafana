@@ -1,4 +1,4 @@
-#  How to start minikube on windows
+#  How to install Helm on windows
 - Run below command on CMD
     ```bash
 	choco install kubernetes-helm
