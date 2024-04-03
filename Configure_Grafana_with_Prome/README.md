@@ -6,10 +6,14 @@
 - Copy the URL and login to Grafana with password obtained while installation
 
 - Go to Connection --> Add New Data Source --> Select Prometheus
+
 ![minikube](../screenshots/connection_prome.PNG?raw=true)
 
+
 - Provide the name for the source code, Paste Prometheus URL in soruce code URL
+
 ![minikube](../screenshots/configure_prome.PNG?raw=true)
+
 
 - Check and Test the connectivity
 
