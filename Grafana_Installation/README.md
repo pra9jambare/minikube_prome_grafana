@@ -1,26 +1,25 @@
-#  How to start minikube on windows
-- Add repo Prometheus to helm:
+#  How to install Grafana using Helm
+- Add repo Grafana to helm:
     ```bash
-	helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+	helm repo add grafana https://grafana.github.io/helm-charts 
 
-- Install helm chart for Prometheus:
+- Install helm chart for Grafana:
     ```bash
-	helm install prometheus prometheus-community/prometheus
+	helm install grafana grafana/grafana
 
 - Create the service name and expose port no:
     ```bash
-	kubectl expose service prometheus-server --type=NodePort --target-port=9090 --name=prometheus-server-np
+	kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana-np 
 
-![minikube](../screenshots/prome_svc.PNG?raw=true)
+![minikube](../screenshots/grafana_svc.PNG?raw=true)
 
-- Check status of the pods:
+- Check the username & password for Grafana :
     ```bash
-	kubectl get pods -l app.kubernetes.io/instance=prometheus
-    
-![minikube](../screenshots/prome_pods.PNG?raw=true)
+	kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}"
+- Decode the password with base64 
+
+![minikube](../screenshots/grafana_pod.PNG?raw=true)
 
 - Hit the browser once all the pods are up and running:
     ```bash
-	minikube service prometheus-server-np
-
-
+	minikube service grafana-np
