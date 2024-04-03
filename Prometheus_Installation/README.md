@@ -1,4 +1,4 @@
-#  How to start minikube on windows
+#  How to install Prometheus using Helm
 - Add repo Prometheus to helm:
     ```bash
 	helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
