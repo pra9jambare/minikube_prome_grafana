@@ -21,6 +21,8 @@
   - Dashboard --> Import --> URL or Id 
   - You can use “6417“ Id  
 
+  ![minikube](../screenshots/import_dash.PNG?raw=true)
+
 - You can find the dashboard list under Home --> Dashboard
 
 ![minikube](../screenshots/grafana_dash_list.PNG?raw=true)
