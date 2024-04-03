@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blue
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myapp
+      env: blue
+  template:
+    metadata:
+      labels:
+        app: myapp
+        env: blue
+    spec:
+      containers:
+      - name: myapp
+        image: coolgourav147/nginx-custom
+        ports:
+        - containerPort: 80
