@@ -1,4 +1,4 @@
-#  How to start minikube on windows
+#  How to install Chocolatey on windows
 - Chocolatey or Choco as it is sometimes referred to, is a free, open-source package manager for Windows that is very similar to Apt or DNF in the Linux realm.
 - Use below command on CMD for installation of choco on windows
     ```bash
