@@ -5,7 +5,7 @@
     - In this repository, you will find detailed instructions and resources to guide you through the installation and monitoring process. Whether you're new to Kubernetes cluster management or looking to enhance your monitoring skills, this project provides valuable insights to help you monitor your Minikube cluster effectively.
 
 - Key features include:
-    - 	Step-by-step installation guides for Minikube on Windows operating systems
+    - 	Step-by-step installation guides for Minikube on Windows and Ubuntu operating systems
     - 	Setup instructions for configuring Prometheus to collect metrics from Minikube
     - 	Configuration of Grafana dashboards to visualize Minikube cluster metrics
     - 	Troubleshooting tips and best practices for monitoring Kubernetes clusters
@@ -14,8 +14,8 @@
     - This project covers various aspects of deploying and monitoring your Minikube cluster:
 
 - The repository offers detailed instructions to deploy following projects:
-    - 	Installation of Minikube on Windows
-        - Get started by installing Minikube on your Windows operating system.
+    - 	Installation of Minikube on Windows and Ubuntu 
+        - Get started by installing Minikube on your Windows and Ubuntu operating system.
     - 	Installation of Helm Chart
         -  Install Helm, a package manager for Kubernetes, to simplify the deployment process.
     - 	Installation & Configuration of Prometheus 
@@ -27,8 +27,9 @@
     - 	Create visualizations in Grafana using Prometheus
         - Utilize Grafana to create custom visualizations using Prometheus data.
 
+
 - Flow of the project:
-    - 	Installation of Minikube 
+    - 	Installation of Minikube for Winodws and Ubuntu
     - 	Start Minikube
     - 	Install Chocolaty
     - 	Install Helm using chocolaty
@@ -38,5 +39,8 @@
     - 	Configure Grafana with Prometheus
     -   Monitor the deployment
 
+Note:
+    - You can skip Install Choclaty step for Ubuntu. (You can use wget / curl to download and install)
+    
 - Feel free to explore the project and reach out if you have any questions or feedback. 
 - Happy learning and monitoring!
