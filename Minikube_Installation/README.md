@@ -40,7 +40,7 @@
     ```
 
 
-#   Install Hypervisor
+#   Install Hypervisor for Windows
 - Download the virtual box from documentation. [\[Click Here\]](https://www.virtualbox.org/wiki/Downloads) to visit windows installation
 - Install the virtual box 
 
@@ -56,10 +56,28 @@
     
 
 
-#   Install Minikube
+#   Install Minikube for Windows
 - Download the Minikube from Github. [\[Click Here\]](https://github.com/kubernetes/minikube/releases/) to visit repository
 - Install the Minikube.exe 
 - Add Minikube to the PATH environment variable
 - System --> Advanced System Settings --> Environment Variable --> Path --> Edit --> New --> OK 
 - Open the Command Prompt and type “minikube version”. This should display the version of Minikube that you have installed
 ![minikube](../screenshots/minikube_version.PNG?raw=true)
+
+# Install Minikube for Ubuntu
+- Use wget to download the most recent Minikube binary.
+    ``` bash
+    wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+    ```
+- Paste the downloaded file into the /usr/local/bin/minikube directory.
+    ``` bash
+    sudo cp minikube-linux-amd64 /usr/local/bin/minikube
+    ```
+- Grant executable permissions to the file within the minikube directory.
+    ``` bash
+    sudo chmod 755 /usr/local/bin/minikube
+    ```
+- Confirm the successful installation of Minikube by checking its version.
+    ``` bash
+    minikube version
+    ```
