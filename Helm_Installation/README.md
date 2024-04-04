@@ -1,4 +1,4 @@
-#  How to start minikube on windows
+#  How to start minikube on Windows
 - Run below command on CMD
     ```bash
 	choco install kubernetes-helm
@@ -10,7 +10,7 @@
 ![minikube](../screenshots/helm_version.PNG?raw=true)
 
 
-#  How to start minikube on windows
+#  How to start minikube on Ubuntu
 - Download the binary using wget.
     ```bash
 	wget -O helm.tar.gz https://get.helm.sh/helm-v3.13.0-rc.1-linux-amd64.tar.gz
