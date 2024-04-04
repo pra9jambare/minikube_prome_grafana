@@ -7,6 +7,21 @@
 ![minikube](../screenshots/kubectl_version.PNG?raw=true)
 	
 # Install Kubectl for Ubuntu
+- Update System and Install Required Packages
+     ``` bash
+    sudo apt-get update -y
+    ```
+    ``` bash
+    sudo apt-get upgrade -y
+    ```
+    ``` bash
+    sudo apt-get install curl
+    ```
+    ``` bash
+    sudo apt-get install apt-transport-https
+    ```
+
+
 - Download kubectl 
     ``` bash
     curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
