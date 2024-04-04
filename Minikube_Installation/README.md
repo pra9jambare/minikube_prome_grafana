@@ -29,6 +29,18 @@
 - Download the virtual box from documentation. [\[Click Here\]](https://www.virtualbox.org/wiki/Downloads) to visit windows installation
 - Install the virtual box 
 
+# Install Hypervisor for Ubuntu
+- To install VirtualBox on Ubuntu 
+    ``` bash
+    sudo apt install virtualbox virtualbox-ext-pack
+    ```
+    - Press 'y' and hit Enter to confirm the installation.
+    - Use Tab to navigate to the license agreement, then hit Enter to proceed.
+    - Select 'Yes' to agree with the terms of the VirtualBox PUEL license when prompted by the installer.
+    - Wait for the installation to finish before proceeding to the next step.
+    
+
+
 #   Install Minikube
 - Download the Minikube from Github. [\[Click Here\]](https://github.com/kubernetes/minikube/releases/) to visit repository
 - Install the Minikube.exe 
